@@ -28,7 +28,7 @@ spec:
           name: ks-sample
           readinessProbe:
             httpGet:
-              path: /
+              path: /log1
               port: 8080
             timeoutSeconds: 10
             failureThreshold: 30
