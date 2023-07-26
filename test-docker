@@ -2,4 +2,4 @@ FROM openjdk:8
 MAINTAINER ckl
 LABEL name="dockerfile-demo" version="1.0" author="ckl"
 COPY target/demo-test-0.0.1-SNAPSHOT.jar demo-test.jar
-CMD ["java","-jar","demo-test.jar"]
+CMD ["java","-jar","demo-test.jar",">","/var/log"]
